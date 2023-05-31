@@ -1,0 +1,9 @@
+.fejlec{
+    display: block;
+}
+
+@media only screen and (max-width: 991px)  {
+    .fejlec{
+        display: none;
+    }
+}

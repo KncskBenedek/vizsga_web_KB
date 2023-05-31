@@ -1,1 +1,42 @@
-<button class="btn btn-primary">btn</button>
+<div class="container">
+  <div class="row">
+    <p>Szavak</p>
+  </div>
+  <div>
+    <h3>Szavak</h3>
+    <div>
+      <label for=""></label>
+      <select name="temaSelect" id="temaSelect" #selector>
+        <option value="-1" *ngFor="let tema of temak">Nincs választva</option>
+        <option value="{{ tema.id }}" *ngFor="let tema of temak">
+          {{ tema.temanev }}
+        </option>
+      </select>
+    </div>
+    <div class="row fejlec">
+      <div class="col-lg-4 col-md-4 ">Angol</div>
+      <div class="col-lg-4 col-md-4 ">Magyar</div>
+      <div class="col-lg-4 col-md-4 ">visszajelzés</div>
+    </div>
+    <form #form>
+      <div
+        class="row"
+        *ngFor="let sor of szavak; index as i"
+        style="border: 1px solid black"
+      >
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <p>{{ sor.angol }}</p>
+        </div>
+        <div class="col-lg-4  col-md-4 col-sm-12">
+          <input type="text" name="inp{{i}}" id="inp{{i}}" #a (onfocuseout)="a(a.value)"/>
+        </div>
+        <div class="col-lg-4  col-md-4 col-sm-12">
+            
+        <p >{{a.value == sor.magyar?  'jó' : 'rossz'}}</p>
+        <p>{{form['inp'+i].value}}</p>
+        </div> 
+      </div>
+    </form>
+
+  </div>
+</div>

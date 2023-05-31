@@ -1,0 +1,51 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "vizsga_coll",
+    "dateExported": "2023-05-31T11:26:15.202Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "7a5e725d-231f-496a-b9fc-fb3e56f45675",
+            "colId": "843e0cae-3901-4d0d-a4f4-e3cdc8ea783a",
+            "containerId": "",
+            "name": "témék get",
+            "url": "https://localhost:7258/tema",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-05-31T11:24:28.307Z",
+            "modified": "2023-05-31T11:24:48.310Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ffae3ab9-3466-4fd3-8ea1-df64615cdc5c",
+            "colId": "843e0cae-3901-4d0d-a4f4-e3cdc8ea783a",
+            "containerId": "",
+            "name": "adott téma",
+            "url": "https://localhost:7258/tema/1",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2023-05-31T11:25:00.378Z",
+            "modified": "2023-05-31T11:25:31.969Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bf7f31ca-5498-46ac-93b9-a17d062f6609",
+            "colId": "843e0cae-3901-4d0d-a4f4-e3cdc8ea783a",
+            "containerId": "",
+            "name": "szavak get",
+            "url": "https://localhost:7258/szavak",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-05-31T11:24:58.627Z",
+            "modified": "2023-05-31T11:25:59.775Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
