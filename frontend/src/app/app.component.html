@@ -28,12 +28,12 @@
           <p>{{ sor.angol }}</p>
         </div>
         <div class="col-lg-4  col-md-4 col-sm-12">
-          <input type="text" name="inp{{i}}" id="inp{{i}}" #a (onfocuseout)="a(a.value)"/>
+          <input type="text" name="inp{{i}}" id="inp{{i}}" value="{{sor.magyar}}"/>
         </div>
         <div class="col-lg-4  col-md-4 col-sm-12">
             
-        <p >{{a.value == sor.magyar?  'jó' : 'rossz'}}</p>
-        <p>{{form['inp'+i].value}}</p>
+        <p >{{form['inp'+i].value == sor.magyar ?  'jó' : 'rossz'}}</p>
+        <p>{{form['inp'+i].value == sor.magyar}}</p>
         </div> 
       </div>
     </form>

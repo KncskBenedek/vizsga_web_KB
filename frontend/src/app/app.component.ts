@@ -33,9 +33,4 @@ ngOnInit(){
   
 
 }
-
-a(a){
-  console.log(a);
-  
-}
 }
